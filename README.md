@@ -1,8 +1,8 @@
-# Awesome Email & SMS for AI Agents [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Email for AI Agents [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of email and SMS infrastructure, SDKs, tools, frameworks, and patterns for AI agent systems.
+> A curated list of email infrastructure, SDKs, tools, frameworks, and patterns for AI agent systems.
 
-Email is the universal async protocol for AI agents. SMS adds the urgency channel. This list covers everything you need to give your agent a real inbox and phone number — from dedicated infrastructure to framework integrations to production patterns.
+Email is the universal async protocol for AI agents. This list covers everything you need to give your agent a real inbox — from dedicated infrastructure to framework integrations to production patterns.
 
 **Criteria for inclusion:** Tools must either be designed specifically for AI agents, or have demonstrated production adoption in agent stacks at scale.
 
@@ -11,7 +11,6 @@ Email is the universal async protocol for AI agents. SMS adds the urgency channe
 ## Contents
 
 - [Email Infrastructure](#email-infrastructure)
-- [SMS and Telephony](#sms-and-telephony)
 - [MCP Servers](#mcp-servers)
 - [Framework Integrations](#framework-integrations)
 - [n8n / Workflow Automation](#n8n--workflow-automation)
@@ -28,7 +27,7 @@ Tools and platforms for giving AI agents dedicated email capabilities.
 
 ### Purpose-built for agents
 
-**[Commune](https://commune.email)** — Dedicated email & SMS infrastructure for AI agents. Each agent gets its own inbox, inbound emails fire webhooks, threads track across clients, and attachments are threat-scanned. Built-in: RFC 5322 threading, semantic vector search, structured JSON extraction, prompt injection protection, HMAC-signed webhooks with 8-retry delivery guarantee.
+**[Commune](https://commune.email)** — Dedicated email infrastructure for AI agents. Each agent gets its own inbox, inbound emails fire webhooks, threads track across clients, and attachments are threat-scanned. Built-in: RFC 5322 threading, semantic vector search, structured JSON extraction, prompt injection protection, HMAC-signed webhooks with 8-retry delivery guarantee.
 - Python SDK: `pip install commune-mail` — [commune-python](https://github.com/shanjai-raj/commune-python)
 - TypeScript SDK: `npm install commune-ai` — [commune-ai](https://github.com/shanjai-raj/commune-ai)
 - MCP Server: `uvx commune-mcp` — [commune-mcp](https://github.com/shanjai-raj/commune-mcp)
@@ -58,33 +57,11 @@ Tools and platforms for giving AI agents dedicated email capabilities.
 
 ---
 
-## SMS and Telephony
-
-### Purpose-built for agents
-
-**[Commune SMS](https://commune.email)** — Same platform as the email section. Provision real phone numbers, send/receive SMS, unified semantic search across email + SMS history.
-- Included in commune-mail and commune-ai SDKs
-
-### Dual-use
-
-**[Twilio](https://twilio.com)** — Full communications platform: SMS, RCS, WhatsApp, voice, email APIs. ConversationRelay provides real-time voice call handling for AI agents. Most complete communications API surface.
-- GitHub: [twilio/twilio-python](https://github.com/twilio/twilio-python), [twilio/twilio-node](https://github.com/twilio/twilio-node)
-
-**[Vonage](https://developer.vonage.com)** — SMS, voice, video APIs. Conversation API for multi-channel agent workflows.
-- GitHub: [vonage/vonage-python-sdk](https://github.com/vonage/vonage-python-sdk)
-
-**[Telnyx](https://telnyx.com)** — Programmable telephony. SMS, voice, fax, WebRTC. Developer-friendly pricing, carrier-grade infrastructure.
-- GitHub: [team-telnyx/telnyx-python](https://github.com/team-telnyx/telnyx-python)
-
-**[Plivo](https://plivo.com)** — SMS and voice API. Global coverage, bulk SMS, number management.
-
----
-
 ## MCP Servers
 
-Model Context Protocol servers that give AI assistants (Claude Desktop, Cursor, Windsurf) email and SMS capabilities.
+Model Context Protocol servers that give AI assistants (Claude Desktop, Cursor, Windsurf) email capabilities.
 
-**[commune-mcp](https://github.com/shanjai-raj/commune-mcp)** — 13 email & SMS tools for Claude Desktop, Cursor, and Windsurf. Create inboxes, read threads, send email, provision phone numbers, send SMS. `uvx commune-mcp`.
+**[commune-mcp](https://github.com/shanjai-raj/commune-mcp)** — Email tools for Claude Desktop, Cursor, and Windsurf. Create inboxes, read threads, send email. `uvx commune-mcp`.
 
 **[mcp-server-gmail](https://github.com/modelcontextprotocol/servers)** — Official MCP server for Gmail. Read/send from your personal Gmail account. Part of the official MCP servers collection.
 
@@ -220,7 +197,7 @@ client.messages.send(
 
 ## Cookbook Examples
 
-Complete, runnable code examples for email & SMS in agent systems.
+Complete, runnable code examples for email in agent systems.
 
 | Example | Framework | Description |
 |---------|-----------|-------------|
@@ -232,7 +209,6 @@ Complete, runnable code examples for email & SMS in agent systems.
 | [Structured Extraction](https://github.com/shanjai-raj/commune-cookbook/tree/main/capabilities/structured-extraction) | Any | Auto-parse email fields to JSON |
 | [Semantic Search](https://github.com/shanjai-raj/commune-cookbook/tree/main/capabilities/semantic-search) | Any | Natural language inbox search |
 | [Webhook Handler](https://github.com/shanjai-raj/commune-cookbook/tree/main/typescript) | TypeScript | Express webhook + HMAC verification |
-| [SMS Agent](https://github.com/shanjai-raj/commune-cookbook/tree/main/sms) | Python | Provision number, send/receive SMS |
 | [Hiring Pipeline](https://github.com/shanjai-raj/commune-cookbook/tree/main/use-cases/hiring-and-recruiting) | Any | Candidate outreach + screening sequences |
 | [Sales Outreach](https://github.com/shanjai-raj/commune-cookbook/tree/main/use-cases/sales-and-marketing) | Any | Cold email + follow-up sequences |
 | [n8n Workflow](https://github.com/shanjai-raj/n8n-nodes-commune) | n8n | No-code email agent workflows |
