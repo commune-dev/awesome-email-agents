@@ -57,6 +57,7 @@ Tools and platforms for giving AI agents dedicated email capabilities.
 **[Haraka](https://github.com/haraka/Haraka)** — High-performance Node.js SMTP server. Extensible via plugins. Used for custom inbound processing pipelines.
 
 ---
+- [Mautic](https://www.mautic.org) - Open-source email marketing automation platform for newsletters, segmentation, and campaign workflows.
 
 ## SMS and Telephony
 
