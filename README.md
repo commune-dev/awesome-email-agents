@@ -35,6 +35,11 @@ Tools and platforms for giving AI agents dedicated email capabilities.
 - Self-hostable backend — [commune](https://github.com/shanjai-raj/commune)
 - Cookbook: [commune-cookbook](https://github.com/shanjai-raj/commune-cookbook)
 
+**[OutreachAgent](https://outreachagent.dev)** — API-first outbound email infrastructure for AI agents, with reply-aware sequences, inbox and thread state, signed webhooks, retries, delivery observability, and sender pacing guardrails.
+- TypeScript SDK: `npm install @outreachagent/sdk-ts`
+- Agent integration guide: [outreachagent.dev/for-agents](https://outreachagent.dev/for-agents)
+- Purpose-built for agent-driven cold outbound
+
 ### Transactional email (dual-use)
 
 **[Resend](https://resend.com)** — Modern email API for developers. Clean API, React Email templates, webhooks, inbound email support. Does not provision per-agent isolated inboxes. Best for agents that only need to send email (not receive).
