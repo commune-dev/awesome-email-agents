@@ -41,9 +41,9 @@ Tools and platforms for giving AI agents dedicated email capabilities.
 - `npm install resend` or `pip install resend`
 - GitHub: [resend/resend-node](https://github.com/resend/resend-node)
 
-**[SuperSend TX](https://supersendtx.com)** — Transactional email API with Node SDK, SMTP relay, signed webhooks, and an MCP server for agent send workflows. Does not provision per-agent isolated inboxes. Best for agents that need to send (not receive) on owned mail infrastructure.
+**[SuperSend TX](https://supersendtx.com)** — Transactional email API with Node SDK, SMTP relay, signed webhooks, MCP server, and Agent Skills for Cursor/Claude. Does not provision per-agent isolated inboxes. Best for agents that need to send (not receive) on owned mail infrastructure.
 - `npm install supersendtx` · MCP: `npx supersendtx-mcp`
-- GitHub: [Super-Send/supersendtx](https://github.com/Super-Send/supersendtx) · [Super-Send/supersendtx-mcp](https://github.com/Super-Send/supersendtx-mcp)
+- Docs: https://docs.supersendtx.com · Skills: [Super-Send/supersendtx-skills](https://github.com/Super-Send/supersendtx-skills) · SDKs: [Super-Send/supersendtx-sdks](https://github.com/Super-Send/supersendtx-sdks)
 
 **[SendGrid](https://sendgrid.com)** — Twilio's email platform. High-volume sending, deliverability tools, inbound parse webhook. Designed for bulk/marketing email; agent-native features require significant wrapper code.
 - GitHub: [sendgrid/sendgrid-python](https://github.com/sendgrid/sendgrid-python), [sendgrid/sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs)
@@ -93,7 +93,7 @@ Model Context Protocol servers that give AI assistants (Claude Desktop, Cursor, 
 **[mcp-server-gmail](https://github.com/modelcontextprotocol/servers)** — Official MCP server for Gmail. Read/send from your personal Gmail account. Part of the official MCP servers collection.
 
 **[mcp-server-sendgrid](https://github.com/modelcontextprotocol/servers)** — Official MCP server for SendGrid email sending.
-**[supersendtx-mcp](https://github.com/Super-Send/supersendtx-mcp)** — MCP server for SuperSend TX transactional send (domains, emails, webhooks).
+**[supersendtx-mcp](https://www.npmjs.com/package/supersendtx-mcp)** — MCP server for SuperSend TX transactional send (`npx supersendtx-mcp`).
 
 ---
 
