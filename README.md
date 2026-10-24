@@ -90,6 +90,12 @@ Model Context Protocol servers that give AI assistants (Claude Desktop, Cursor, 
 
 **[mcp-server-sendgrid](https://github.com/modelcontextprotocol/servers)** — Official MCP server for SendGrid email sending.
 
+**[Outbound OS](https://github.com/RecepioHQ/outbound-os)** — MIT-licensed decision gates for AI-agent email outreach, with local MCP `start`, `check`, and authorization-gated `send` tools. Live delivery is disabled by default.
+- Install: Clone the repository, run `npm ci`, then `cd chatgpt && npm start` (Node.js 22+)
+- GitHub: [RecepioHQ/outbound-os](https://github.com/RecepioHQ/outbound-os)
+- Purpose-built for agents; [offline safety gate demo](https://recepiohq.github.io/outbound-os/) (synthetic data, no real mail)
+
+
 ---
 
 ## Framework Integrations
