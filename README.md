@@ -41,6 +41,10 @@ Tools and platforms for giving AI agents dedicated email capabilities.
 - `npm install resend` or `pip install resend`
 - GitHub: [resend/resend-node](https://github.com/resend/resend-node)
 
+**[Groundmail](https://groundmail.dev)** — Transactional email API with SDKs (Node, Python, Go, PHP, Ruby), SMTP relay, signed webhooks, inbound parsing, an MCP server and Agent Skills for coding agents. Runs on its own mail servers and IP space. Does not provision per-agent isolated inboxes. Best for agents that need to send on owned mail infrastructure.
+- `npm install groundmail` · MCP: `npx -y groundmail-mcp`, or hosted at `https://mcp.groundmail.dev/mcp` (OAuth)
+- Docs: https://docs.groundmail.dev · Skills: [Groundmail/groundmail-skills](https://github.com/Groundmail/groundmail-skills) · SDKs: [Groundmail/groundmail-sdks](https://github.com/Groundmail/groundmail-sdks)
+
 **[SendGrid](https://sendgrid.com)** — Twilio's email platform. High-volume sending, deliverability tools, inbound parse webhook. Designed for bulk/marketing email; agent-native features require significant wrapper code.
 - GitHub: [sendgrid/sendgrid-python](https://github.com/sendgrid/sendgrid-python), [sendgrid/sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs)
 
@@ -89,6 +93,8 @@ Model Context Protocol servers that give AI assistants (Claude Desktop, Cursor, 
 **[mcp-server-gmail](https://github.com/modelcontextprotocol/servers)** — Official MCP server for Gmail. Read/send from your personal Gmail account. Part of the official MCP servers collection.
 
 **[mcp-server-sendgrid](https://github.com/modelcontextprotocol/servers)** — Official MCP server for SendGrid email sending.
+
+**[groundmail-mcp](https://github.com/Groundmail/groundmail-mcp)** — MCP server for Groundmail: send and track transactional email and set up sending domains (`npx -y groundmail-mcp`, or hosted with OAuth at `https://mcp.groundmail.dev/mcp`).
 
 ---
 
