@@ -90,6 +90,11 @@ Model Context Protocol servers that give AI assistants (Claude Desktop, Cursor, 
 
 **[mcp-server-sendgrid](https://github.com/modelcontextprotocol/servers)** — Official MCP server for SendGrid email sending.
 
+**[Poptin MCP](https://www.poptin.com/mcp/)** — Official hosted MCP that lets agents draft marketing emails for opted-in audiences, analyze signup forms and popups, and prepare subscriber segments.
+- Setup: Add `https://mcp.popt.in/mcp` to a compatible client and connect an authorized Poptin account using OAuth; see the [setup guide](https://developers.poptin.com/docs/mcp).
+- GitHub: [Poptin-LTD/Poptin-MCP](https://github.com/Poptin-LTD/Poptin-MCP).
+- Purpose-built agent connector for the Poptin marketing platform; sending and scheduling require user confirmation.
+
 ---
 
 ## Framework Integrations
