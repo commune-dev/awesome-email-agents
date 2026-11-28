@@ -90,6 +90,11 @@ Model Context Protocol servers that give AI assistants (Claude Desktop, Cursor, 
 
 **[mcp-server-sendgrid](https://github.com/modelcontextprotocol/servers)** — Official MCP server for SendGrid email sending.
 
+**[FairValid MCP](https://fairvalid.com/help/mcp)** — Purpose-built MCP integration for AI assistants to verify email addresses and inspect verification jobs, results and workspace credits.
+- Connect: Streamable HTTP at `https://mcp.fairvalid.com/mcp` using OAuth or a protected API key; a FairValid account and available credits are required.
+- GitHub: [moonlitnayeem/fairvalid-ai](https://github.com/moonlitnayeem/fairvalid-ai) — MIT integration files and workflow skills; the hosted service is proprietary.
+- Purpose-built for agents; the [verification skill](https://github.com/moonlitnayeem/fairvalid-ai/blob/main/skills/email-verification/SKILL.md) covers credit authorization, stable idempotency keys and paginated results.
+
 ---
 
 ## Framework Integrations
